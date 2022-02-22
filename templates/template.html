@@ -1,0 +1,8 @@
+{% for value in car_info %}
+    <br>
+    <br>
+    <p>차량 번호 : {{ value.car_number }}</p>
+    <p>소유주 : {{ value.owner.name }}</p>
+    <p>차량 모델 : {{ value.car_model.model_name }}</p>
+    <p>차량 브랜드 : {{ value.car_model.brand.brand_name }}</p>
+{% endfor %}
